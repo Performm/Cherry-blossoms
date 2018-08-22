@@ -13,9 +13,38 @@
 *{margin:0;padding:0;list-style-type:none;}
 a,img{border:0;}
 body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+  .pp{
+    position: fixed;
+    bottom: 10px;
+    left:10px;
+    z-index:9999;
+  }
+  .pp>p{
+    font-size:20px;
+    padding: 10px 10px;
+    border-bottom:solid 1px pink;
+    color: pink;
+  }
 </style>
 
-  <canvas id="sakura"></canvas>
+  <canvas id="sakura">
+
+  </canvas>
+  <div class="pp">
+    <p>愿你三冬暖，愿你春不寒；</p>
+    <p>愿你天黑有灯，下雨有伞。</p>
+    <p>愿你路上有良人相伴，</p>
+    <p>愿你所有快乐 无需假装，</p>
+    <p>愿你此生尽兴、赤诚善良。</p>
+    <p>愿时光能缓，愿故人不散；</p>
+    <p>愿有人陪你颠沛流离，</p>
+    <p>愿你惦念的人能和你道早安，</p>
+    <p>愿你独闯的日子里不觉得孤单。</p>
+    <p>愿你人间走一遭，圆满了三界六道，</p>
+    <p>看透了是非善恶；从此福来心至，皆是逍遥。</p>
+    <p>等你走后我还是会想你的，还会想到你傻傻的笑   ------   你身后永远的小兵</p>
+  </div>
+
 <!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
 uniform mat4 uProjection;
